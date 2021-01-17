@@ -16,7 +16,7 @@ var (
 	nextID = 1
 )
 
-func GetUser() []*User {
+func GetUsers() []*User {
 	return users
 }
 
@@ -48,7 +48,7 @@ func UpdateUser(u User) (User, error) {
 		}
 	}
 
-	return User{}, fmt.Errorf("User with ID '%v' not found", id)
+	return User{}, fmt.Errorf("User with ID '%v' not found", u.ID)
 }
 
 func RemoveUserByID(id int) error {
