@@ -45,7 +45,7 @@ func (uc userController) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func (uc userController) getAll(w http.ResponseWriter, r *http.Request) {
-	encodeResponseAsjson(models.GetUsers, w)
+	encodeResponseAsjson(models.GetUsers(), w)
 }
 
 func (uc userController) get(id int, w http.ResponseWriter) {

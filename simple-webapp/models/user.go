@@ -54,7 +54,7 @@ func UpdateUser(u User) (User, error) {
 func RemoveUserByID(id int) error {
 	for i, u := range users {
 		if u.ID == id {
-			users = append(users[:i], users[:i+1]...)
+			users = append(users[:i], users[i+1:]...)
 			return nil
 		}
 	}
