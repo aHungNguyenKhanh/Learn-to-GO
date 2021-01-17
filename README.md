@@ -6,3 +6,4 @@ Everythings but the most basic about GO programming language include:
 - Collections
 - Functions and Methods
 - Program Flow
+- Create a simple web server that handling http request
