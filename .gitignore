@@ -1,2 +1,2 @@
-# Ignore window executable
-*.exe
+# Ignore build file
+**/bin/**/*
